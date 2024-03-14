@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudakov</title>
+    <link rel="stylesheet" type="text/css" href="./src/css/style.css">
+    <link rel="preload" href="./src/icons/loupe.svg" as="image" type="image/svg+xml">
+    <link rel="preload" href="./src/icons/mail.svg" as="image" type="image/svg+xml">
+    <link rel="preload" href="./src/icons/phone.svg" as="image" type="image/svg+xml">
+    <link rel="preload" href="./src/icons/close.svg" as="image" type="image/svg+xml">
+</head>
+<body>
+    <div class="main_wrapper">
+        <div class="container_filter">
+            <input class="text_filter" type="text" oninput="filterHandler(event)"/>
+            <img class="img_icons img_filter" src="./src/icons/loupe.svg"/>
+        </div>
+        <div id="userList" class="container_users"></div>
+    </div>
+    <div id="shadow_wrap" class="modal_window_wrapper">
+        <div id="modal" class="modal_window"></div>
+    </div>
+</body>
+<script src="./src/js/script.js"></script>
+</html>
